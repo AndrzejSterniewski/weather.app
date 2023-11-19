@@ -6,12 +6,12 @@ import { useCallback } from 'react';
 const WeatherBox = () => {
 
   const handleCityChange = useCallback(city => {
-    console.log('city', city);
+    console.log(city);
   }, []);
 
   return (
     <section>
-      <PickCity action={handleCityChange} />
+      <PickCity handleCityChange={handleCityChange} />
       <WeatherSummary />
       <Loader />
     </section>

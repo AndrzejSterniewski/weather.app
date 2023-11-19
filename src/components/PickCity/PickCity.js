@@ -9,6 +9,7 @@ const PickCity = ({ handleCityChange }) => {
   const handleSubmit = e => {
     e.preventDefault();
     handleCityChange(city);
+    setCity('');
   }
 
   return (
